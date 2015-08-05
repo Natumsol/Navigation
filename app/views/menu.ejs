@@ -15,14 +15,14 @@
             </form>
         </div>
         <div class="sidebar__form form_alt">
-            <form>
+            <form action="/signin" method="post">
                 <div class="form-group">
-                    <label class="sr-only" for="login__username">用户名</label>
-                    <input type="text" class="form-control" id="login__username" placeholder="用户名">
+                    <label class="sr-only" for="username">用户名</label>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="用户名">
                 </div>
                 <div class="form-group">
-                    <label class="sr-only" for="login__password">密码</label>
-                    <input type="password" class="form-control" id="login__password" placeholder="密码">
+                    <label class="sr-only" for="password">密码</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="密码">
                 </div>
                 <button type="submit" class="btn btn-block btn-primary">登陆</button>
             </form>
