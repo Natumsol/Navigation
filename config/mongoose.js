@@ -9,6 +9,6 @@ module.exports = function(){
 		}
 	});
 
-	require("../app/models/queue.server.model.js");
+	require("../app/models/user.server.model.js");
 	return db;
 };
