@@ -1,9 +1,10 @@
 // 不同的路由应用不同的控制器
 var users = require('../controllers/user.server.controller'),
-	index = require('../controllers/index.server.controller'),
+	main = require('../controllers/main.server.controller'),
 	passport = require('passport');
 module.exports = function(app) {
-	app.route("/").get(index.render);
+	app.route("/").get(main.index);
+	app.route("/introduction").get(main.introduction);
 
 	app.route('/signup')
 		.get(users.renderSignup)
