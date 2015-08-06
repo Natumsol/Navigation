@@ -6,12 +6,12 @@ var UserSchema = new Schema({
     lastName: String,
     email: {
         type: String,
-        match: [/.+\@.+\..+/, "Please fill a valid e-mail address"]
+        match: [/.+\@.+\..+/, "Email地址不合法！"]
     },
     username: {
         type: String,
         unique: true,
-        required: 'Username is required',
+        required: '用户名不能为空！',
         trim: true
     },
     password: {
@@ -19,29 +19,16 @@ var UserSchema = new Schema({
         validate: [
             function (password) {
                 return password && password.length > 6;
-            }, 'Password should be longer'
+            }, '密码位数应该多于6位！'
         ]
     },
     salt: {
         type: String
     },
-    provider: {
-        type: String,
-        required: 'Provider is required'
-    },
-    providerId: String,
-    providerData: {},
     created: {
         type: Date,
         default: Date.now
     }
-});
-UserSchema.virtual('fullName').get(function () {
-    return this.firstName + ' ' + this.lastName;
-}).set(function (fullName) {
-    var splitName = fullName.split(' ');
-    this.firstName = splitName[0] || '';
-    this.lastName = splitName[1] || '';
 });
 UserSchema.pre('save', function (next) {
     if (this.password) {

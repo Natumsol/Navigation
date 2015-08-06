@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <% include header.ejs %>
+</head>
+<body>
+<!-- SIGN UP============================== -->
+<div class="sign-in-up__wrapper">
+   <div class="container">
+      <div class="row">
+         <div class="col-xs-12">
+
+            <h4 class="heading sign-in-up__heading">注册账号</h4>
+            <p class="heading__sub sign-in-up-heading__sub"></p>
+
+            <form class="form_alt sign-in-up__form" role="form" action="/signup" method="post">
+               <div class="form-group">
+                  <label for="sign-up__name" class="sr-only">用户名</label>
+                  <input type="text" name="username" class="form-control" id="sign-up__name" placeholder="用户名">
+               </div>
+               <div class="form-group">
+                  <label for="sign-up__email" class="sr-only">电子邮箱</label>
+                  <input type="email" name="email" class="form-control" id="sign-up__email" placeholder="电子邮箱">
+               </div>
+               <div class="form-group">
+                  <div class="row">
+                     <div class="col-sm-6">
+                        <div class="form-group">
+                           <label for="sign-up__password" class="sr-only">密码</label>
+                           <input type="password" name="password" class="form-control" id="sign-up__password" placeholder="密码">
+                        </div>
+                     </div>
+                     <div class="col-sm-6">
+                        <div class="form-group">
+                           <label for="sign-up__password_repeat" class="sr-only">重复输入密码</label>
+                           <input type="password" name="" class="form-control" id="sign-up__password_repeat" placeholder="重复输入密码">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="checkbox">
+                  <label>
+                     <input type="checkbox"> 同意 <a href="#">服务条款</a> 和 <a href="#">隐私协议</a>
+                  </label>
+               </div>
+               <button type="submit" class="btn btn-primary btn-block">创建账户</button>
+            </form>
+
+            <!-- Sign In link -->
+            <div class="sign-in-up__footer">
+               已有账号? <a href="/signin">登陆</a>
+            </div>
+
+         </div>
+      </div>
+   </div> <!-- / .container -->
+</div> <!-- / .sign-in-up__wrapper -->
+
+<% include base.ejs%>
+</body>
+</html>

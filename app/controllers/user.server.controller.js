@@ -6,10 +6,10 @@ var getErrorMessage = function(err) {
 		switch (err.code) {
 			case 11000:
 			case 11001:
-				message = 'Username already exists';
+				message = '用户名已存在！';
 				break;
 			default:
-				message = 'Something went wrong';
+				message = '验证出现问题，请重试。';
 		}
 	} else {
 		for (var errName in err.errors) {

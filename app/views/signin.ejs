@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <% include header.ejs %>
+</head>
+<body>
+<!-- SIGN IN============================== -->
+<% for (i in messages) {%>
+<div class="alert alert-danger alert-dismissible alert-custom" role="alert">
+   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+   <i class="fa fa-exclamation-circle fa-3"></i> <strong><%= messages[i]%></strong>
+</div>
+<%}%>
+
+<div class="sign-in-up__wrapper">
+   <div class="container">
+      <div class="row">
+         <div class="col-xs-12">
+
+            <h4 class="heading sign-in-up__heading">登陆</h4>
+            <p class="heading__sub sign-in-up-heading__sub">
+
+            </p>
+
+            <form class="form_alt sign-in-up__form" role="form" method="post" action="/signin">
+               <div class="form-group">
+                  <label for="sign-in__username" class="sr-only">用户名</label>
+                  <input type="text" name="username" class="form-control" id="sign-in__username" placeholder="用户名">
+               </div>
+               <div class="form-group">
+                  <label for="sign-in__password" class="sr-only">密码</label>
+                  <input type="password" name="password" class="form-control" id="sign-in__password" placeholder="密码">
+               </div>
+               <div class="checkbox">
+                  <label>
+                     <input type="checkbox"> 保持登陆
+                  </label>
+               </div>
+               <button type="submit" class="btn btn-block btn-primary">登陆</button>
+            </form>
+
+            <!-- Sign Up link -->
+            <div class="sign-in-up__footer">
+               没有注册? <a href="/signup">立即注册</a>
+            </div>
+
+         </div>
+      </div>
+   </div> <!-- / .container -->
+</div> <!-- / .sign-in-up__wrapper -->
+
+<% include base.ejs%>
+</body>
+</html>
