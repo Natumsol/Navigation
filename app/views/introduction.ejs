@@ -89,8 +89,12 @@
                                     宁夏是中华文明的发祥地之一，位于“丝绸之路”上，历史上曾是东西部交通贸易的重要通道，作为黄河流经的地区，这里同样有古老悠久的黄河文明。
                                 </p>
                                 <div class="comment">
+                                    <div class="myarrow">
+                                        <div class="box1"></div>
+                                        <div class="box2"></div>
+                                    </div>
                                     <% for(i in comments) {%>
-                                    <div class="comment-item row">
+                                    <div class="comment-item row <%if (i == comments.length - 1) {%> <%='noborder'%><%}%>">
                                         <div class="col-sm-1">
                                             <img src="img/author_3.jpg" class="img-responsive img-circle" alt=""/>
                                         </div>
