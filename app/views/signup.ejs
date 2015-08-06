@@ -5,6 +5,12 @@
 </head>
 <body>
 <!-- SIGN UP============================== -->
+<% for (i in messages) {%>
+<div class="alert alert-danger alert-dismissible alert-custom animated fade in" role="alert">
+   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+   <i class="fa fa-exclamation-circle fa-3"></i> <strong><%= messages[i]%></strong>
+</div>
+<%}%>
 <div class="sign-in-up__wrapper">
    <div class="container">
       <div class="row">

@@ -6,12 +6,12 @@ var UserSchema = new Schema({
     lastName: String,
     email: {
         type: String,
-        match: [/.+\@.+\..+/, "Email地址不合法！"]
+        match: [/.+\@.+\..+/, "Email鍦板潃涓嶅悎娉曪紒"]
     },
     username: {
         type: String,
         unique: true,
-        required: '用户名不能为空！',
+        required: '鐢ㄦ埛鍚嶄笉鑳戒负绌猴紒',
         trim: true
     },
     password: {
@@ -19,7 +19,7 @@ var UserSchema = new Schema({
         validate: [
             function (password) {
                 return password && password.length > 6;
-            }, '密码位数应该多于6位！'
+            }, '瀵嗙爜浣嶆暟搴旇澶氫簬6浣嶏紒'
         ]
     },
     salt: {

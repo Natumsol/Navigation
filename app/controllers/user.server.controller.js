@@ -6,10 +6,10 @@ var getErrorMessage = function(err) {
 		switch (err.code) {
 			case 11000:
 			case 11001:
-				message = 'ÓÃ»§ÃûÒÑ´æÔÚ£¡';
+				message = 'ç”¨æˆ·åå·²å­˜åœ¨ï¼';
 				break;
 			default:
-				message = 'ÑéÖ¤³öÏÖÎÊÌâ£¬ÇëÖØÊÔ¡£';
+				message = 'éªŒè¯å‡ºç°é—®é¢˜ï¼Œè¯·é‡è¯•ã€‚';
 		}
 	} else {
 		for (var errName in err.errors) {
