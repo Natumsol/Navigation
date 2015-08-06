@@ -11,10 +11,11 @@
               <span class="input-group-btn">
                 <button class="btn btn-primary" type="button">搜索</button>
               </span>
-                </div><!-- /input-group -->
+                </div>
+                <!-- /input-group -->
             </form>
         </div>
-        <% if (!user) {%>
+        <% if (!user) { %>
         <div class="sidebar__form form_alt">
             <form action="/signin" method="post">
                 <div class="form-group">
@@ -34,12 +35,13 @@
         <ul class="sidebar__menu">
             <li><a href="/signup">注册</a></li>
         </ul>
-        <% } else {%>
+        <% } else { %>
         <div class="user-center">
             <li class="dropdown sidebar__menu">
                 <span style="color: #fff;">欢迎您，</span>
-                <a id="drop4" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
-                    <%= user.username%>
+                <a id="drop4" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                   aria-expanded="true">
+                    <%= user.username %>
                     <span class="caret"></span>
                 </a>
                 <ul id="menu1" class="dropdown-menu" aria-labelledby="drop4">
@@ -51,7 +53,7 @@
                 </ul>
             </li>
         </div>
-        <% }%>
+        <% } %>
         <div class="sidebar__logo">
             全景导航
         </div>

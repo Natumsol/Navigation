@@ -1,598 +1,738 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <% include header.ejs %>
-    </head>
-    <body>
-        <% include menu.ejs %>
-        <!-- WRAPPER============================== -->
-        <div class="wrapper">
-            <!-- NAVBAR============================== -->
-            <nav class="navbar navbar-default navbar-fixed-top js-navbar-top js-toggleClass">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#home">全景导航</a>
-                    </div>
-                    <div id="navbar" class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav navbar-right ">
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#portfolio_ningxia">宁夏景点</a></li>
-                            <li><a href="#portfolio_nature">自然景观</a></li>
-                            <li><a href="#portfolio_renwen">人文景点</a></li>
-                            <!-- <li><a href="#link">友情链接</a></li> -->
-                            <li class="hidden-xs">
-                                <p class="navbar-text navbar__separator"></p>
-                            </li>
-                            <li>
-                                <a href="#" class="js-toggle-sidebar">
-                                    <span class="oi oi-menu hidden-xs"></span>
-                                    <span class="visible-xs">Bonus pages</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div><!--/.nav-collapse -->
+<head>
+    <% include header.ejs %>
+</head>
+<body>
+<% include menu.ejs %>
+<!-- WRAPPER============================== -->
+<div class="wrapper">
+    <!-- NAVBAR============================== -->
+    <nav class="navbar navbar-default navbar-fixed-top js-navbar-top js-toggleClass">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#home">全景导航</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right ">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#portfolio_ningxia">宁夏景点</a></li>
+                    <li><a href="#portfolio_nature">自然景观</a></li>
+                    <li><a href="#portfolio_renwen">人文景点</a></li>
+                    <!-- <li><a href="#link">友情链接</a></li> -->
+                    <li class="hidden-xs">
+                        <p class="navbar-text navbar__separator"></p>
+                    </li>
+                    <li>
+                        <a href="#" class="js-toggle-sidebar">
+                            <span class="oi oi-menu hidden-xs"></span>
+                            <span class="visible-xs">Bonus pages</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <!-- HERO
+    ============================== -->
+    <div class="hero hero_agency container-full" id="home">
+        <div>
+            <div id="owl-demo" class="owl-carousel owl-carousel">
+                <div><img src="img/portfolio_7.jpg"></div>
+                <div><img src="img/portfolio_8.jpg"></div>
+            </div>
+        </div>
+        <!-- / .container -->
+    </div>
+    <!-- / .hero -->
+
+    <!-- PORTFOLIO
+    ============================== -->
+    <div class="section" id="portfolio_ningxia">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h4 class="heading">宁夏景点</h4>
+
+                    <p class="heading__sub">
+                        宁夏是中华文明的发祥地之一，位于“丝绸之路”上，历史上曾是东西部交通贸易的重要通道，作为黄河流经的地区，这里同样有古老悠久的黄河文明。早在三万年前，宁夏就已有了人类生息的痕迹，公元1038年，党项族的首领李元昊在此建立了西夏王朝，并形成了西夏文化。古今素有“塞上江南”之美誉。
+                    </p>
                 </div>
-            </nav>
+            </div>
+            <!-- / .row -->
+        </div>
+        <!-- / .container -->
 
-            <!-- HERO
-            ============================== -->
-            <div class="hero hero_agency container-full" id="home">
-                <div>
-                    <div id="owl-demo" class="owl-carousel owl-carousel">
-                        <div><img src="img/portfolio_7.jpg"></div>
-                        <div><img src="img/portfolio_8.jpg"></div>
+        <div class="portfolio__items">
+
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="portfolio__item">
+                    <div class="portfolio-item__img">
+                        <a href="img/portfolio_1.jpg" data-lightbox="portfolio">
+                            <img src="img/portfolio_1.jpg" class="img-responsive" alt="...">
+
+                            <div class="portfolio-item__mask">
+                                <div class="portfolio-item-mask__content">
+                                    <div class="portfolio-item-mask__title">
+                                        西夏王陵国家AAAA景区，位于银川市西夏区。
+                                    </div>
+                                    <div class="portfolio-item-mask__summary">
+                                        是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
+                                    </div>
+                                </div>
+                                <!-- / .portfolio-item-mask__content -->
+                            </div>
+                            <!-- / .portfolio-item__mask -->
+                        </a>
                     </div>
-                </div><!-- / .container -->
-            </div> <!-- / .hero -->
+                    <!-- / .portfolio-item__img -->
+                </div>
+                <!-- / .portfolio__item -->
+            </div>
 
-            <!-- PORTFOLIO
-            ============================== -->
-            <div class="section" id="portfolio_ningxia">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h4 class="heading">宁夏景点</h4>
-                            <p class="heading__sub">
-                                宁夏是中华文明的发祥地之一，位于“丝绸之路”上，历史上曾是东西部交通贸易的重要通道，作为黄河流经的地区，这里同样有古老悠久的黄河文明。早在三万年前，宁夏就已有了人类生息的痕迹，公元1038年，党项族的首领李元昊在此建立了西夏王朝，并形成了西夏文化。古今素有“塞上江南”之美誉。
-                            </p>
-                        </div>
-                    </div> <!-- / .row -->
-                </div> <!-- / .container -->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="portfolio__item">
+                    <div class="portfolio-item__img">
+                        <a href="img/portfolio_2.jpg" data-lightbox="portfolio">
+                            <img src="img/portfolio_2.jpg" class="img-responsive" alt="...">
 
-                <div class="portfolio__items">
-
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <div class="portfolio__item">
-                            <div class="portfolio-item__img">
-                                <a href="img/portfolio_1.jpg" data-lightbox="portfolio">
-                                    <img src="img/portfolio_1.jpg" class="img-responsive" alt="...">
-                                    <div class="portfolio-item__mask">
-                                        <div class="portfolio-item-mask__content">
-                                            <div class="portfolio-item-mask__title">
-                                                西夏王陵国家AAAA景区，位于银川市西夏区。
-                                            </div>
-                                            <div class="portfolio-item-mask__summary">
-                                                是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
-                                            </div>
-                                        </div> <!-- / .portfolio-item-mask__content -->
-                                    </div> <!-- / .portfolio-item__mask -->
-                                </a>
-                            </div> <!-- / .portfolio-item__img -->
-                        </div> <!-- / .portfolio__item -->
+                            <div class="portfolio-item__mask">
+                                <div class="portfolio-item-mask__content">
+                                    <div class="portfolio-item-mask__title">
+                                        西夏王陵国家AAAA景区，位于银川市西夏区。
+                                    </div>
+                                    <div class="portfolio-item-mask__summary">
+                                        是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
+                                    </div>
+                                </div>
+                                <!-- / .portfolio-item-mask__content -->
+                            </div>
+                            <!-- / .portfolio-item__mask -->
+                        </a>
                     </div>
+                    <!-- / .portfolio-item__img -->
+                </div>
+                <!-- / .portfolio__item -->
+            </div>
 
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <div class="portfolio__item">
-                            <div class="portfolio-item__img">
-                                <a href="img/portfolio_2.jpg" data-lightbox="portfolio">
-                                    <img src="img/portfolio_2.jpg" class="img-responsive" alt="...">
-                                    <div class="portfolio-item__mask">
-                                        <div class="portfolio-item-mask__content">
-                                            <div class="portfolio-item-mask__title">
-                                                西夏王陵国家AAAA景区，位于银川市西夏区。
-                                            </div>
-                                            <div class="portfolio-item-mask__summary">
-                                                是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
-                                            </div>
-                                        </div> <!-- / .portfolio-item-mask__content -->
-                                    </div> <!-- / .portfolio-item__mask -->
-                                </a>
-                            </div> <!-- / .portfolio-item__img -->
-                        </div> <!-- / .portfolio__item -->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="portfolio__item">
+                    <div class="portfolio-item__img">
+                        <a href="img/portfolio_3.jpg" data-lightbox="portfolio">
+                            <img src="img/portfolio_3.jpg" class="img-responsive" alt="...">
+
+                            <div class="portfolio-item__mask">
+                                <div class="portfolio-item-mask__content">
+                                    <div class="portfolio-item-mask__title">
+                                        西夏王陵国家AAAA景区，位于银川市西夏区。
+                                    </div>
+                                    <div class="portfolio-item-mask__summary">
+                                        是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
+                                    </div>
+                                </div>
+                                <!-- / .portfolio-item-mask__content -->
+                            </div>
+                            <!-- / .portfolio-item__mask -->
+                        </a>
                     </div>
+                    <!-- / .portfolio-item__img -->
+                </div>
+                <!-- / .portfolio__item -->
+            </div>
 
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <div class="portfolio__item">
-                            <div class="portfolio-item__img">
-                                <a href="img/portfolio_3.jpg" data-lightbox="portfolio">
-                                    <img src="img/portfolio_3.jpg" class="img-responsive" alt="...">
-                                    <div class="portfolio-item__mask">
-                                        <div class="portfolio-item-mask__content">
-                                            <div class="portfolio-item-mask__title">
-                                                西夏王陵国家AAAA景区，位于银川市西夏区。
-                                            </div>
-                                            <div class="portfolio-item-mask__summary">
-                                                是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
-                                            </div>
-                                        </div> <!-- / .portfolio-item-mask__content -->
-                                    </div> <!-- / .portfolio-item__mask -->
-                                </a>
-                            </div> <!-- / .portfolio-item__img -->
-                        </div> <!-- / .portfolio__item -->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="portfolio__item">
+                    <div class="portfolio-item__img">
+                        <a href="img/portfolio_4.jpg" data-lightbox="portfolio">
+                            <img src="img/portfolio_4.jpg" class="img-responsive" alt="...">
+
+                            <div class="portfolio-item__mask">
+                                <div class="portfolio-item-mask__content">
+                                    <div class="portfolio-item-mask__title">
+                                        西夏王陵国家AAAA景区，位于银川市西夏区。
+                                    </div>
+                                    <div class="portfolio-item-mask__summary">
+                                        是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
+                                    </div>
+                                </div>
+                                <!-- / .portfolio-item-mask__content -->
+                            </div>
+                            <!-- / .portfolio-item__mask -->
+                        </a>
                     </div>
+                    <!-- / .portfolio-item__img -->
+                </div>
+                <!-- / .portfolio__item -->
+            </div>
 
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <div class="portfolio__item">
-                            <div class="portfolio-item__img">
-                                <a href="img/portfolio_4.jpg" data-lightbox="portfolio">
-                                    <img src="img/portfolio_4.jpg" class="img-responsive" alt="...">
-                                    <div class="portfolio-item__mask">
-                                        <div class="portfolio-item-mask__content">
-                                            <div class="portfolio-item-mask__title">
-                                                西夏王陵国家AAAA景区，位于银川市西夏区。
-                                            </div>
-                                            <div class="portfolio-item-mask__summary">
-                                                是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
-                                            </div>
-                                        </div> <!-- / .portfolio-item-mask__content -->
-                                    </div> <!-- / .portfolio-item__mask -->
-                                </a>
-                            </div> <!-- / .portfolio-item__img -->
-                        </div> <!-- / .portfolio__item -->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="portfolio__item">
+                    <div class="portfolio-item__img">
+                        <a href="img/portfolio_5.jpg" data-lightbox="portfolio">
+                            <img src="img/portfolio_5.jpg" class="img-responsive" alt="...">
+
+                            <div class="portfolio-item__mask">
+                                <div class="portfolio-item-mask__content">
+                                    <div class="portfolio-item-mask__title">
+                                        西夏王陵国家AAAA景区，位于银川市西夏区。
+                                    </div>
+                                    <div class="portfolio-item-mask__summary">
+                                        是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
+                                    </div>
+                                </div>
+                                <!-- / .portfolio-item-mask__content -->
+                            </div>
+                            <!-- / .portfolio-item__mask -->
+                        </a>
                     </div>
+                    <!-- / .portfolio-item__img -->
+                </div>
+                <!-- / .portfolio__item -->
+            </div>
 
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <div class="portfolio__item">
-                            <div class="portfolio-item__img">
-                                <a href="img/portfolio_5.jpg" data-lightbox="portfolio">
-                                    <img src="img/portfolio_5.jpg" class="img-responsive" alt="...">
-                                    <div class="portfolio-item__mask">
-                                        <div class="portfolio-item-mask__content">
-                                            <div class="portfolio-item-mask__title">
-                                                西夏王陵国家AAAA景区，位于银川市西夏区。
-                                            </div>
-                                            <div class="portfolio-item-mask__summary">
-                                                是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
-                                            </div>
-                                        </div> <!-- / .portfolio-item-mask__content -->
-                                    </div> <!-- / .portfolio-item__mask -->
-                                </a>
-                            </div> <!-- / .portfolio-item__img -->
-                        </div> <!-- / .portfolio__item -->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="portfolio__item">
+                    <div class="portfolio-item__img">
+                        <a href="img/portfolio_6.jpg" data-lightbox="portfolio">
+                            <img src="img/portfolio_6.jpg" class="img-responsive" alt="...">
+
+                            <div class="portfolio-item__mask">
+                                <div class="portfolio-item-mask__content">
+                                    <div class="portfolio-item-mask__title">
+                                        西夏王陵国家AAAA景区，位于银川市西夏区。
+                                    </div>
+                                    <div class="portfolio-item-mask__summary">
+                                        是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
+                                    </div>
+                                </div>
+                                <!-- / .portfolio-item-mask__content -->
+                            </div>
+                            <!-- / .portfolio-item__mask -->
+                        </a>
                     </div>
+                    <!-- / .portfolio-item__img -->
+                </div>
+                <!-- / .portfolio__item -->
+            </div>
 
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <div class="portfolio__item">
-                            <div class="portfolio-item__img">
-                                <a href="img/portfolio_6.jpg" data-lightbox="portfolio">
-                                    <img src="img/portfolio_6.jpg" class="img-responsive" alt="...">
-                                    <div class="portfolio-item__mask">
-                                        <div class="portfolio-item-mask__content">
-                                            <div class="portfolio-item-mask__title">
-                                                西夏王陵国家AAAA景区，位于银川市西夏区。
-                                            </div>
-                                            <div class="portfolio-item-mask__summary">
-                                                是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
-                                            </div>
-                                        </div> <!-- / .portfolio-item-mask__content -->
-                                    </div> <!-- / .portfolio-item__mask -->
-                                </a>
-                            </div> <!-- / .portfolio-item__img -->
-                        </div> <!-- / .portfolio__item -->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="portfolio__item">
+                    <div class="portfolio-item__img">
+                        <a href="img/portfolio_7.jpg" data-lightbox="portfolio">
+                            <img src="img/portfolio_7.jpg" class="img-responsive" alt="...">
+
+                            <div class="portfolio-item__mask">
+                                <div class="portfolio-item-mask__content">
+                                    <div class="portfolio-item-mask__title">
+                                        西夏王陵国家AAAA景区，位于银川市西夏区。
+                                    </div>
+                                    <div class="portfolio-item-mask__summary">
+                                        是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
+                                    </div>
+                                </div>
+                                <!-- / .portfolio-item-mask__content -->
+                            </div>
+                            <!-- / .portfolio-item__mask -->
+                        </a>
                     </div>
+                    <!-- / .portfolio-item__img -->
+                </div>
+                <!-- / .portfolio__item -->
+            </div>
 
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <div class="portfolio__item">
-                            <div class="portfolio-item__img">
-                                <a href="img/portfolio_7.jpg" data-lightbox="portfolio">
-                                    <img src="img/portfolio_7.jpg" class="img-responsive" alt="...">
-                                    <div class="portfolio-item__mask">
-                                        <div class="portfolio-item-mask__content">
-                                            <div class="portfolio-item-mask__title">
-                                                西夏王陵国家AAAA景区，位于银川市西夏区。
-                                            </div>
-                                            <div class="portfolio-item-mask__summary">
-                                                是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
-                                            </div>
-                                        </div> <!-- / .portfolio-item-mask__content -->
-                                    </div> <!-- / .portfolio-item__mask -->
-                                </a>
-                            </div> <!-- / .portfolio-item__img -->
-                        </div> <!-- / .portfolio__item -->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="portfolio__item">
+                    <div class="portfolio-item__img">
+                        <a href="img/portfolio_8.jpg" data-lightbox="portfolio">
+                            <img src="img/portfolio_8.jpg" class="img-responsive" alt="...">
+
+                            <div class="portfolio-item__mask">
+                                <div class="portfolio-item-mask__content">
+                                    <div class="portfolio-item-mask__title">
+                                        西夏王陵国家AAAA景区，位于银川市西夏区。
+                                    </div>
+                                    <div class="portfolio-item-mask__summary">
+                                        是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
+                                    </div>
+                                </div>
+                                <!-- / .portfolio-item-mask__content -->
+                            </div>
+                            <!-- / .portfolio-item__mask -->
+                        </a>
                     </div>
+                    <!-- / .portfolio-item__img -->
+                </div>
+                <!-- / .portfolio__item -->
+            </div>
 
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <div class="portfolio__item">
-                            <div class="portfolio-item__img">
-                                <a href="img/portfolio_8.jpg" data-lightbox="portfolio">
-                                    <img src="img/portfolio_8.jpg" class="img-responsive" alt="...">
-                                    <div class="portfolio-item__mask">
-                                        <div class="portfolio-item-mask__content">
-                                            <div class="portfolio-item-mask__title">
-                                                西夏王陵国家AAAA景区，位于银川市西夏区。
-                                            </div>
-                                            <div class="portfolio-item-mask__summary">
-                                                是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
-                                            </div>
-                                        </div> <!-- / .portfolio-item-mask__content -->
-                                    </div> <!-- / .portfolio-item__mask -->
-                                </a>
-                            </div> <!-- / .portfolio-item__img -->
-                        </div> <!-- / .portfolio__item -->
-                    </div>
+            <div class="clearfix"></div>
 
-                    <div class="clearfix"></div>
+        </div>
+        <!-- / .portfolio__items -->
 
-                </div> <!-- / .portfolio__items -->
-
-            </div> <!-- / .section --> <!-- PORTFOLIO
+    </div>
+    <!-- / .section --> <!-- PORTFOLIO
       ============================== -->
-            <div class="section" id="portfolio_nature">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h4 class="heading">自然景观</h4>
-                            <p class="heading__sub">
-                                宁夏是中华文明的发祥地之一，位于“丝绸之路”上，历史上曾是东西部交通贸易的重要通道，作为黄河流经的地区，这里同样有古老悠久的黄河文明。早在三万年前，宁夏就已有了人类生息的痕迹，公元1038年，党项族的首领李元昊在此建立了西夏王朝，并形成了西夏文化。古今素有“塞上江南”之美誉。
-                            </p>
-                        </div>
-                    </div> <!-- / .row -->
-                </div> <!-- / .container -->
+    <div class="section" id="portfolio_nature">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h4 class="heading">自然景观</h4>
 
-                <div class="portfolio__items">
+                    <p class="heading__sub">
+                        宁夏是中华文明的发祥地之一，位于“丝绸之路”上，历史上曾是东西部交通贸易的重要通道，作为黄河流经的地区，这里同样有古老悠久的黄河文明。早在三万年前，宁夏就已有了人类生息的痕迹，公元1038年，党项族的首领李元昊在此建立了西夏王朝，并形成了西夏文化。古今素有“塞上江南”之美誉。
+                    </p>
+                </div>
+            </div>
+            <!-- / .row -->
+        </div>
+        <!-- / .container -->
 
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <div class="portfolio__item">
-                            <div class="portfolio-item__img">
-                                <a href="img/portfolio_1.jpg" data-lightbox="portfolio">
-                                    <img src="img/portfolio_1.jpg" class="img-responsive" alt="...">
-                                    <div class="portfolio-item__mask">
-                                        <div class="portfolio-item-mask__content">
-                                            <div class="portfolio-item-mask__title">
-                                                西夏王陵国家AAAA景区，位于银川市西夏区。
-                                            </div>
-                                            <div class="portfolio-item-mask__summary">
-                                                是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
-                                            </div>
-                                        </div> <!-- / .portfolio-item-mask__content -->
-                                    </div> <!-- / .portfolio-item__mask -->
-                                </a>
-                            </div> <!-- / .portfolio-item__img -->
-                        </div> <!-- / .portfolio__item -->
+        <div class="portfolio__items">
+
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="portfolio__item">
+                    <div class="portfolio-item__img">
+                        <a href="img/portfolio_1.jpg" data-lightbox="portfolio">
+                            <img src="img/portfolio_1.jpg" class="img-responsive" alt="...">
+
+                            <div class="portfolio-item__mask">
+                                <div class="portfolio-item-mask__content">
+                                    <div class="portfolio-item-mask__title">
+                                        西夏王陵国家AAAA景区，位于银川市西夏区。
+                                    </div>
+                                    <div class="portfolio-item-mask__summary">
+                                        是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
+                                    </div>
+                                </div>
+                                <!-- / .portfolio-item-mask__content -->
+                            </div>
+                            <!-- / .portfolio-item__mask -->
+                        </a>
                     </div>
+                    <!-- / .portfolio-item__img -->
+                </div>
+                <!-- / .portfolio__item -->
+            </div>
 
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <div class="portfolio__item">
-                            <div class="portfolio-item__img">
-                                <a href="img/portfolio_2.jpg" data-lightbox="portfolio">
-                                    <img src="img/portfolio_2.jpg" class="img-responsive" alt="...">
-                                    <div class="portfolio-item__mask">
-                                        <div class="portfolio-item-mask__content">
-                                            <div class="portfolio-item-mask__title">
-                                                西夏王陵国家AAAA景区，位于银川市西夏区。
-                                            </div>
-                                            <div class="portfolio-item-mask__summary">
-                                                是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
-                                            </div>
-                                        </div> <!-- / .portfolio-item-mask__content -->
-                                    </div> <!-- / .portfolio-item__mask -->
-                                </a>
-                            </div> <!-- / .portfolio-item__img -->
-                        </div> <!-- / .portfolio__item -->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="portfolio__item">
+                    <div class="portfolio-item__img">
+                        <a href="img/portfolio_2.jpg" data-lightbox="portfolio">
+                            <img src="img/portfolio_2.jpg" class="img-responsive" alt="...">
+
+                            <div class="portfolio-item__mask">
+                                <div class="portfolio-item-mask__content">
+                                    <div class="portfolio-item-mask__title">
+                                        西夏王陵国家AAAA景区，位于银川市西夏区。
+                                    </div>
+                                    <div class="portfolio-item-mask__summary">
+                                        是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
+                                    </div>
+                                </div>
+                                <!-- / .portfolio-item-mask__content -->
+                            </div>
+                            <!-- / .portfolio-item__mask -->
+                        </a>
                     </div>
+                    <!-- / .portfolio-item__img -->
+                </div>
+                <!-- / .portfolio__item -->
+            </div>
 
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <div class="portfolio__item">
-                            <div class="portfolio-item__img">
-                                <a href="img/portfolio_3.jpg" data-lightbox="portfolio">
-                                    <img src="img/portfolio_3.jpg" class="img-responsive" alt="...">
-                                    <div class="portfolio-item__mask">
-                                        <div class="portfolio-item-mask__content">
-                                            <div class="portfolio-item-mask__title">
-                                                西夏王陵国家AAAA景区，位于银川市西夏区。
-                                            </div>
-                                            <div class="portfolio-item-mask__summary">
-                                                是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
-                                            </div>
-                                        </div> <!-- / .portfolio-item-mask__content -->
-                                    </div> <!-- / .portfolio-item__mask -->
-                                </a>
-                            </div> <!-- / .portfolio-item__img -->
-                        </div> <!-- / .portfolio__item -->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="portfolio__item">
+                    <div class="portfolio-item__img">
+                        <a href="img/portfolio_3.jpg" data-lightbox="portfolio">
+                            <img src="img/portfolio_3.jpg" class="img-responsive" alt="...">
+
+                            <div class="portfolio-item__mask">
+                                <div class="portfolio-item-mask__content">
+                                    <div class="portfolio-item-mask__title">
+                                        西夏王陵国家AAAA景区，位于银川市西夏区。
+                                    </div>
+                                    <div class="portfolio-item-mask__summary">
+                                        是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
+                                    </div>
+                                </div>
+                                <!-- / .portfolio-item-mask__content -->
+                            </div>
+                            <!-- / .portfolio-item__mask -->
+                        </a>
                     </div>
+                    <!-- / .portfolio-item__img -->
+                </div>
+                <!-- / .portfolio__item -->
+            </div>
 
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <div class="portfolio__item">
-                            <div class="portfolio-item__img">
-                                <a href="img/portfolio_4.jpg" data-lightbox="portfolio">
-                                    <img src="img/portfolio_4.jpg" class="img-responsive" alt="...">
-                                    <div class="portfolio-item__mask">
-                                        <div class="portfolio-item-mask__content">
-                                            <div class="portfolio-item-mask__title">
-                                                西夏王陵国家AAAA景区，位于银川市西夏区。
-                                            </div>
-                                            <div class="portfolio-item-mask__summary">
-                                                是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
-                                            </div>
-                                        </div> <!-- / .portfolio-item-mask__content -->
-                                    </div> <!-- / .portfolio-item__mask -->
-                                </a>
-                            </div> <!-- / .portfolio-item__img -->
-                        </div> <!-- / .portfolio__item -->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="portfolio__item">
+                    <div class="portfolio-item__img">
+                        <a href="img/portfolio_4.jpg" data-lightbox="portfolio">
+                            <img src="img/portfolio_4.jpg" class="img-responsive" alt="...">
+
+                            <div class="portfolio-item__mask">
+                                <div class="portfolio-item-mask__content">
+                                    <div class="portfolio-item-mask__title">
+                                        西夏王陵国家AAAA景区，位于银川市西夏区。
+                                    </div>
+                                    <div class="portfolio-item-mask__summary">
+                                        是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
+                                    </div>
+                                </div>
+                                <!-- / .portfolio-item-mask__content -->
+                            </div>
+                            <!-- / .portfolio-item__mask -->
+                        </a>
                     </div>
+                    <!-- / .portfolio-item__img -->
+                </div>
+                <!-- / .portfolio__item -->
+            </div>
 
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <div class="portfolio__item">
-                            <div class="portfolio-item__img">
-                                <a href="img/portfolio_5.jpg" data-lightbox="portfolio">
-                                    <img src="img/portfolio_5.jpg" class="img-responsive" alt="...">
-                                    <div class="portfolio-item__mask">
-                                        <div class="portfolio-item-mask__content">
-                                            <div class="portfolio-item-mask__title">
-                                                西夏王陵国家AAAA景区，位于银川市西夏区。
-                                            </div>
-                                            <div class="portfolio-item-mask__summary">
-                                                是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
-                                            </div>
-                                        </div> <!-- / .portfolio-item-mask__content -->
-                                    </div> <!-- / .portfolio-item__mask -->
-                                </a>
-                            </div> <!-- / .portfolio-item__img -->
-                        </div> <!-- / .portfolio__item -->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="portfolio__item">
+                    <div class="portfolio-item__img">
+                        <a href="img/portfolio_5.jpg" data-lightbox="portfolio">
+                            <img src="img/portfolio_5.jpg" class="img-responsive" alt="...">
+
+                            <div class="portfolio-item__mask">
+                                <div class="portfolio-item-mask__content">
+                                    <div class="portfolio-item-mask__title">
+                                        西夏王陵国家AAAA景区，位于银川市西夏区。
+                                    </div>
+                                    <div class="portfolio-item-mask__summary">
+                                        是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
+                                    </div>
+                                </div>
+                                <!-- / .portfolio-item-mask__content -->
+                            </div>
+                            <!-- / .portfolio-item__mask -->
+                        </a>
                     </div>
+                    <!-- / .portfolio-item__img -->
+                </div>
+                <!-- / .portfolio__item -->
+            </div>
 
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <div class="portfolio__item">
-                            <div class="portfolio-item__img">
-                                <a href="img/portfolio_6.jpg" data-lightbox="portfolio">
-                                    <img src="img/portfolio_6.jpg" class="img-responsive" alt="...">
-                                    <div class="portfolio-item__mask">
-                                        <div class="portfolio-item-mask__content">
-                                            <div class="portfolio-item-mask__title">
-                                                西夏王陵国家AAAA景区，位于银川市西夏区。
-                                            </div>
-                                            <div class="portfolio-item-mask__summary">
-                                                是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
-                                            </div>
-                                        </div> <!-- / .portfolio-item-mask__content -->
-                                    </div> <!-- / .portfolio-item__mask -->
-                                </a>
-                            </div> <!-- / .portfolio-item__img -->
-                        </div> <!-- / .portfolio__item -->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="portfolio__item">
+                    <div class="portfolio-item__img">
+                        <a href="img/portfolio_6.jpg" data-lightbox="portfolio">
+                            <img src="img/portfolio_6.jpg" class="img-responsive" alt="...">
+
+                            <div class="portfolio-item__mask">
+                                <div class="portfolio-item-mask__content">
+                                    <div class="portfolio-item-mask__title">
+                                        西夏王陵国家AAAA景区，位于银川市西夏区。
+                                    </div>
+                                    <div class="portfolio-item-mask__summary">
+                                        是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
+                                    </div>
+                                </div>
+                                <!-- / .portfolio-item-mask__content -->
+                            </div>
+                            <!-- / .portfolio-item__mask -->
+                        </a>
                     </div>
+                    <!-- / .portfolio-item__img -->
+                </div>
+                <!-- / .portfolio__item -->
+            </div>
 
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <div class="portfolio__item">
-                            <div class="portfolio-item__img">
-                                <a href="img/portfolio_7.jpg" data-lightbox="portfolio">
-                                    <img src="img/portfolio_7.jpg" class="img-responsive" alt="...">
-                                    <div class="portfolio-item__mask">
-                                        <div class="portfolio-item-mask__content">
-                                            <div class="portfolio-item-mask__title">
-                                                西夏王陵国家AAAA景区，位于银川市西夏区。
-                                            </div>
-                                            <div class="portfolio-item-mask__summary">
-                                                是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
-                                            </div>
-                                        </div> <!-- / .portfolio-item-mask__content -->
-                                    </div> <!-- / .portfolio-item__mask -->
-                                </a>
-                            </div> <!-- / .portfolio-item__img -->
-                        </div> <!-- / .portfolio__item -->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="portfolio__item">
+                    <div class="portfolio-item__img">
+                        <a href="img/portfolio_7.jpg" data-lightbox="portfolio">
+                            <img src="img/portfolio_7.jpg" class="img-responsive" alt="...">
+
+                            <div class="portfolio-item__mask">
+                                <div class="portfolio-item-mask__content">
+                                    <div class="portfolio-item-mask__title">
+                                        西夏王陵国家AAAA景区，位于银川市西夏区。
+                                    </div>
+                                    <div class="portfolio-item-mask__summary">
+                                        是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
+                                    </div>
+                                </div>
+                                <!-- / .portfolio-item-mask__content -->
+                            </div>
+                            <!-- / .portfolio-item__mask -->
+                        </a>
                     </div>
+                    <!-- / .portfolio-item__img -->
+                </div>
+                <!-- / .portfolio__item -->
+            </div>
 
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <div class="portfolio__item">
-                            <div class="portfolio-item__img">
-                                <a href="img/portfolio_8.jpg" data-lightbox="portfolio">
-                                    <img src="img/portfolio_8.jpg" class="img-responsive" alt="...">
-                                    <div class="portfolio-item__mask">
-                                        <div class="portfolio-item-mask__content">
-                                            <div class="portfolio-item-mask__title">
-                                                西夏王陵国家AAAA景区，位于银川市西夏区。
-                                            </div>
-                                            <div class="portfolio-item-mask__summary">
-                                                是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
-                                            </div>
-                                        </div> <!-- / .portfolio-item-mask__content -->
-                                    </div> <!-- / .portfolio-item__mask -->
-                                </a>
-                            </div> <!-- / .portfolio-item__img -->
-                        </div> <!-- / .portfolio__item -->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="portfolio__item">
+                    <div class="portfolio-item__img">
+                        <a href="img/portfolio_8.jpg" data-lightbox="portfolio">
+                            <img src="img/portfolio_8.jpg" class="img-responsive" alt="...">
+
+                            <div class="portfolio-item__mask">
+                                <div class="portfolio-item-mask__content">
+                                    <div class="portfolio-item-mask__title">
+                                        西夏王陵国家AAAA景区，位于银川市西夏区。
+                                    </div>
+                                    <div class="portfolio-item-mask__summary">
+                                        是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
+                                    </div>
+                                </div>
+                                <!-- / .portfolio-item-mask__content -->
+                            </div>
+                            <!-- / .portfolio-item__mask -->
+                        </a>
                     </div>
+                    <!-- / .portfolio-item__img -->
+                </div>
+                <!-- / .portfolio__item -->
+            </div>
 
-                    <div class="clearfix"></div>
+            <div class="clearfix"></div>
 
-                </div> <!-- / .portfolio__items -->
+        </div>
+        <!-- / .portfolio__items -->
 
-            </div> <!-- / .section --> <!-- PORTFOLIO
+    </div>
+    <!-- / .section --> <!-- PORTFOLIO
       ============================== -->
-            <div class="section" id="portfolio_renwen">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h4 class="heading">人文景点</h4>
-                            <p class="heading__sub">
-                                宁夏是中华文明的发祥地之一，位于“丝绸之路”上，历史上曾是东西部交通贸易的重要通道，作为黄河流经的地区，这里同样有古老悠久的黄河文明。早在三万年前，宁夏就已有了人类生息的痕迹，公元1038年，党项族的首领李元昊在此建立了西夏王朝，并形成了西夏文化。古今素有“塞上江南”之美誉。
-                            </p>
-                        </div>
-                    </div> <!-- / .row -->
-                </div> <!-- / .container -->
+    <div class="section" id="portfolio_renwen">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h4 class="heading">人文景点</h4>
 
-                <div class="portfolio__items">
+                    <p class="heading__sub">
+                        宁夏是中华文明的发祥地之一，位于“丝绸之路”上，历史上曾是东西部交通贸易的重要通道，作为黄河流经的地区，这里同样有古老悠久的黄河文明。早在三万年前，宁夏就已有了人类生息的痕迹，公元1038年，党项族的首领李元昊在此建立了西夏王朝，并形成了西夏文化。古今素有“塞上江南”之美誉。
+                    </p>
+                </div>
+            </div>
+            <!-- / .row -->
+        </div>
+        <!-- / .container -->
 
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <div class="portfolio__item">
-                            <div class="portfolio-item__img">
-                                <a href="img/portfolio_1.jpg" data-lightbox="portfolio">
-                                    <img src="img/portfolio_1.jpg" class="img-responsive" alt="...">
-                                    <div class="portfolio-item__mask">
-                                        <div class="portfolio-item-mask__content">
-                                            <div class="portfolio-item-mask__title">
-                                                西夏王陵国家AAAA景区，位于银川市西夏区。
-                                            </div>
-                                            <div class="portfolio-item-mask__summary">
-                                                是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
-                                            </div>
-                                        </div> <!-- / .portfolio-item-mask__content -->
-                                    </div> <!-- / .portfolio-item__mask -->
-                                </a>
-                            </div> <!-- / .portfolio-item__img -->
-                        </div> <!-- / .portfolio__item -->
+        <div class="portfolio__items">
+
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="portfolio__item">
+                    <div class="portfolio-item__img">
+                        <a href="img/portfolio_1.jpg" data-lightbox="portfolio">
+                            <img src="img/portfolio_1.jpg" class="img-responsive" alt="...">
+
+                            <div class="portfolio-item__mask">
+                                <div class="portfolio-item-mask__content">
+                                    <div class="portfolio-item-mask__title">
+                                        西夏王陵国家AAAA景区，位于银川市西夏区。
+                                    </div>
+                                    <div class="portfolio-item-mask__summary">
+                                        是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
+                                    </div>
+                                </div>
+                                <!-- / .portfolio-item-mask__content -->
+                            </div>
+                            <!-- / .portfolio-item__mask -->
+                        </a>
                     </div>
+                    <!-- / .portfolio-item__img -->
+                </div>
+                <!-- / .portfolio__item -->
+            </div>
 
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <div class="portfolio__item">
-                            <div class="portfolio-item__img">
-                                <a href="img/portfolio_2.jpg" data-lightbox="portfolio">
-                                    <img src="img/portfolio_2.jpg" class="img-responsive" alt="...">
-                                    <div class="portfolio-item__mask">
-                                        <div class="portfolio-item-mask__content">
-                                            <div class="portfolio-item-mask__title">
-                                                西夏王陵国家AAAA景区，位于银川市西夏区。
-                                            </div>
-                                            <div class="portfolio-item-mask__summary">
-                                                是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
-                                            </div>
-                                        </div> <!-- / .portfolio-item-mask__content -->
-                                    </div> <!-- / .portfolio-item__mask -->
-                                </a>
-                            </div> <!-- / .portfolio-item__img -->
-                        </div> <!-- / .portfolio__item -->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="portfolio__item">
+                    <div class="portfolio-item__img">
+                        <a href="img/portfolio_2.jpg" data-lightbox="portfolio">
+                            <img src="img/portfolio_2.jpg" class="img-responsive" alt="...">
+
+                            <div class="portfolio-item__mask">
+                                <div class="portfolio-item-mask__content">
+                                    <div class="portfolio-item-mask__title">
+                                        西夏王陵国家AAAA景区，位于银川市西夏区。
+                                    </div>
+                                    <div class="portfolio-item-mask__summary">
+                                        是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
+                                    </div>
+                                </div>
+                                <!-- / .portfolio-item-mask__content -->
+                            </div>
+                            <!-- / .portfolio-item__mask -->
+                        </a>
                     </div>
+                    <!-- / .portfolio-item__img -->
+                </div>
+                <!-- / .portfolio__item -->
+            </div>
 
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <div class="portfolio__item">
-                            <div class="portfolio-item__img">
-                                <a href="img/portfolio_3.jpg" data-lightbox="portfolio">
-                                    <img src="img/portfolio_3.jpg" class="img-responsive" alt="...">
-                                    <div class="portfolio-item__mask">
-                                        <div class="portfolio-item-mask__content">
-                                            <div class="portfolio-item-mask__title">
-                                                西夏王陵国家AAAA景区，位于银川市西夏区。
-                                            </div>
-                                            <div class="portfolio-item-mask__summary">
-                                                是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
-                                            </div>
-                                        </div> <!-- / .portfolio-item-mask__content -->
-                                    </div> <!-- / .portfolio-item__mask -->
-                                </a>
-                            </div> <!-- / .portfolio-item__img -->
-                        </div> <!-- / .portfolio__item -->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="portfolio__item">
+                    <div class="portfolio-item__img">
+                        <a href="img/portfolio_3.jpg" data-lightbox="portfolio">
+                            <img src="img/portfolio_3.jpg" class="img-responsive" alt="...">
+
+                            <div class="portfolio-item__mask">
+                                <div class="portfolio-item-mask__content">
+                                    <div class="portfolio-item-mask__title">
+                                        西夏王陵国家AAAA景区，位于银川市西夏区。
+                                    </div>
+                                    <div class="portfolio-item-mask__summary">
+                                        是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
+                                    </div>
+                                </div>
+                                <!-- / .portfolio-item-mask__content -->
+                            </div>
+                            <!-- / .portfolio-item__mask -->
+                        </a>
                     </div>
+                    <!-- / .portfolio-item__img -->
+                </div>
+                <!-- / .portfolio__item -->
+            </div>
 
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <div class="portfolio__item">
-                            <div class="portfolio-item__img">
-                                <a href="img/portfolio_4.jpg" data-lightbox="portfolio">
-                                    <img src="img/portfolio_4.jpg" class="img-responsive" alt="...">
-                                    <div class="portfolio-item__mask">
-                                        <div class="portfolio-item-mask__content">
-                                            <div class="portfolio-item-mask__title">
-                                                西夏王陵国家AAAA景区，位于银川市西夏区。
-                                            </div>
-                                            <div class="portfolio-item-mask__summary">
-                                                是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
-                                            </div>
-                                        </div> <!-- / .portfolio-item-mask__content -->
-                                    </div> <!-- / .portfolio-item__mask -->
-                                </a>
-                            </div> <!-- / .portfolio-item__img -->
-                        </div> <!-- / .portfolio__item -->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="portfolio__item">
+                    <div class="portfolio-item__img">
+                        <a href="img/portfolio_4.jpg" data-lightbox="portfolio">
+                            <img src="img/portfolio_4.jpg" class="img-responsive" alt="...">
+
+                            <div class="portfolio-item__mask">
+                                <div class="portfolio-item-mask__content">
+                                    <div class="portfolio-item-mask__title">
+                                        西夏王陵国家AAAA景区，位于银川市西夏区。
+                                    </div>
+                                    <div class="portfolio-item-mask__summary">
+                                        是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
+                                    </div>
+                                </div>
+                                <!-- / .portfolio-item-mask__content -->
+                            </div>
+                            <!-- / .portfolio-item__mask -->
+                        </a>
                     </div>
+                    <!-- / .portfolio-item__img -->
+                </div>
+                <!-- / .portfolio__item -->
+            </div>
 
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <div class="portfolio__item">
-                            <div class="portfolio-item__img">
-                                <a href="img/portfolio_5.jpg" data-lightbox="portfolio">
-                                    <img src="img/portfolio_5.jpg" class="img-responsive" alt="...">
-                                    <div class="portfolio-item__mask">
-                                        <div class="portfolio-item-mask__content">
-                                            <div class="portfolio-item-mask__title">
-                                                西夏王陵国家AAAA景区，位于银川市西夏区。
-                                            </div>
-                                            <div class="portfolio-item-mask__summary">
-                                                是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
-                                            </div>
-                                        </div> <!-- / .portfolio-item-mask__content -->
-                                    </div> <!-- / .portfolio-item__mask -->
-                                </a>
-                            </div> <!-- / .portfolio-item__img -->
-                        </div> <!-- / .portfolio__item -->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="portfolio__item">
+                    <div class="portfolio-item__img">
+                        <a href="img/portfolio_5.jpg" data-lightbox="portfolio">
+                            <img src="img/portfolio_5.jpg" class="img-responsive" alt="...">
+
+                            <div class="portfolio-item__mask">
+                                <div class="portfolio-item-mask__content">
+                                    <div class="portfolio-item-mask__title">
+                                        西夏王陵国家AAAA景区，位于银川市西夏区。
+                                    </div>
+                                    <div class="portfolio-item-mask__summary">
+                                        是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
+                                    </div>
+                                </div>
+                                <!-- / .portfolio-item-mask__content -->
+                            </div>
+                            <!-- / .portfolio-item__mask -->
+                        </a>
                     </div>
+                    <!-- / .portfolio-item__img -->
+                </div>
+                <!-- / .portfolio__item -->
+            </div>
 
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <div class="portfolio__item">
-                            <div class="portfolio-item__img">
-                                <a href="img/portfolio_6.jpg" data-lightbox="portfolio">
-                                    <img src="img/portfolio_6.jpg" class="img-responsive" alt="...">
-                                    <div class="portfolio-item__mask">
-                                        <div class="portfolio-item-mask__content">
-                                            <div class="portfolio-item-mask__title">
-                                                西夏王陵国家AAAA景区，位于银川市西夏区。
-                                            </div>
-                                            <div class="portfolio-item-mask__summary">
-                                                是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
-                                            </div>
-                                        </div> <!-- / .portfolio-item-mask__content -->
-                                    </div> <!-- / .portfolio-item__mask -->
-                                </a>
-                            </div> <!-- / .portfolio-item__img -->
-                        </div> <!-- / .portfolio__item -->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="portfolio__item">
+                    <div class="portfolio-item__img">
+                        <a href="img/portfolio_6.jpg" data-lightbox="portfolio">
+                            <img src="img/portfolio_6.jpg" class="img-responsive" alt="...">
+
+                            <div class="portfolio-item__mask">
+                                <div class="portfolio-item-mask__content">
+                                    <div class="portfolio-item-mask__title">
+                                        西夏王陵国家AAAA景区，位于银川市西夏区。
+                                    </div>
+                                    <div class="portfolio-item-mask__summary">
+                                        是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
+                                    </div>
+                                </div>
+                                <!-- / .portfolio-item-mask__content -->
+                            </div>
+                            <!-- / .portfolio-item__mask -->
+                        </a>
                     </div>
+                    <!-- / .portfolio-item__img -->
+                </div>
+                <!-- / .portfolio__item -->
+            </div>
 
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <div class="portfolio__item">
-                            <div class="portfolio-item__img">
-                                <a href="img/portfolio_7.jpg" data-lightbox="portfolio">
-                                    <img src="img/portfolio_7.jpg" class="img-responsive" alt="...">
-                                    <div class="portfolio-item__mask">
-                                        <div class="portfolio-item-mask__content">
-                                            <div class="portfolio-item-mask__title">
-                                                西夏王陵国家AAAA景区，位于银川市西夏区。
-                                            </div>
-                                            <div class="portfolio-item-mask__summary">
-                                                是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
-                                            </div>
-                                        </div> <!-- / .portfolio-item-mask__content -->
-                                    </div> <!-- / .portfolio-item__mask -->
-                                </a>
-                            </div> <!-- / .portfolio-item__img -->
-                        </div> <!-- / .portfolio__item -->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="portfolio__item">
+                    <div class="portfolio-item__img">
+                        <a href="img/portfolio_7.jpg" data-lightbox="portfolio">
+                            <img src="img/portfolio_7.jpg" class="img-responsive" alt="...">
+
+                            <div class="portfolio-item__mask">
+                                <div class="portfolio-item-mask__content">
+                                    <div class="portfolio-item-mask__title">
+                                        西夏王陵国家AAAA景区，位于银川市西夏区。
+                                    </div>
+                                    <div class="portfolio-item-mask__summary">
+                                        是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
+                                    </div>
+                                </div>
+                                <!-- / .portfolio-item-mask__content -->
+                            </div>
+                            <!-- / .portfolio-item__mask -->
+                        </a>
                     </div>
+                    <!-- / .portfolio-item__img -->
+                </div>
+                <!-- / .portfolio__item -->
+            </div>
 
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <div class="portfolio__item">
-                            <div class="portfolio-item__img">
-                                <a href="img/portfolio_8.jpg" data-lightbox="portfolio">
-                                    <img src="img/portfolio_8.jpg" class="img-responsive" alt="...">
-                                    <div class="portfolio-item__mask">
-                                        <div class="portfolio-item-mask__content">
-                                            <div class="portfolio-item-mask__title">
-                                                西夏王陵国家AAAA景区，位于银川市西夏区。
-                                            </div>
-                                            <div class="portfolio-item-mask__summary">
-                                                是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
-                                            </div>
-                                        </div> <!-- / .portfolio-item-mask__content -->
-                                    </div> <!-- / .portfolio-item__mask -->
-                                </a>
-                            </div> <!-- / .portfolio-item__img -->
-                        </div> <!-- / .portfolio__item -->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="portfolio__item">
+                    <div class="portfolio-item__img">
+                        <a href="img/portfolio_8.jpg" data-lightbox="portfolio">
+                            <img src="img/portfolio_8.jpg" class="img-responsive" alt="...">
+
+                            <div class="portfolio-item__mask">
+                                <div class="portfolio-item-mask__content">
+                                    <div class="portfolio-item-mask__title">
+                                        西夏王陵国家AAAA景区，位于银川市西夏区。
+                                    </div>
+                                    <div class="portfolio-item-mask__summary">
+                                        是中国现存最密集的帝王陵区，被世人称为“东方金字塔”。分布着九座帝王陵和140 多座王公大臣的殉葬墓。
+                                    </div>
+                                </div>
+                                <!-- / .portfolio-item-mask__content -->
+                            </div>
+                            <!-- / .portfolio-item__mask -->
+                        </a>
                     </div>
+                    <!-- / .portfolio-item__img -->
+                </div>
+                <!-- / .portfolio__item -->
+            </div>
 
-                    <div class="clearfix"></div>
+            <div class="clearfix"></div>
 
-                </div> <!-- / .portfolio__items -->
-            </div> <!-- / .section -->
-                <% include footer.ejs %>
-            </div> <!-- / .wrapper -->
-       <% include base.ejs%>
-    </body>
+        </div>
+        <!-- / .portfolio__items -->
+    </div>
+    <!-- / .section -->
+    <% include footer.ejs %>
+</div>
+<!-- / .wrapper -->
+<% include base.ejs %>
+</body>
 </html>

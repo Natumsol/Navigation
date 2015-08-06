@@ -8,6 +8,10 @@ var UserSchema = new Schema({
         type: String,
         trim: true
     },
+    type: {
+        type: String,
+        enum: ['1', '2', '3', '4']
+    },
     author: {
         type: Schema.ObjectId,
         ref: 'User'
