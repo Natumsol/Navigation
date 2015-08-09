@@ -18,4 +18,6 @@ module.exports = function(app) {
 		}));
 
 	app.get('/signout', users.signout);
+
+
 };

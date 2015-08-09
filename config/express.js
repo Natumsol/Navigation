@@ -35,5 +35,10 @@ module.exports = function () {
 	require("../app/routes/index.server.route.js")(app);//引入路由信息
 	require("../app/routes/introduction.server.route.js")(app);//引入路由信息
 	app.use(express.static("./public"));
+	app.use(function (req, res) {
+		res.render("404", {
+			user: req.user
+		});
+	});// 设置404页面
 	return app;
 };
