@@ -70,6 +70,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
+                    <pre><%= JSON.stringify(introduction) %></pre>
                     <ul class="nav nav-tabs" role="tablist" id="mytabs">
                         <% for(var i = 0; i < introduction.introduction.length; i++){ %>
                         <li role="presentation"
@@ -99,6 +100,7 @@
                         <% for(var i = 0; i < introduction.introduction.length; i++){ %>
                         <div role="tabpanel" class="tab-pane fade <% if(i == 0) { %>active in<% } %>"
                              id="<%= introduction.introduction[i].type %>">
+                            <input type="hidden" value="<%= introduction.introduction[i]._id %>" name="articleId"/>
                             <%- introduction.introduction[i].content %>
                             <% include comment.ejs %>
                         </div>
@@ -112,5 +114,6 @@
     </div>
     <!-- / .wrapper -->
     <% include base.ejs %>
+    <script src="/js/comment.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 var Comment = require('mongoose').model('Comment');
 var moment = require("moment");
 exports.getComment = function (req, res) {
-    Comment.find({article: req.body.article}).exec(function (err, comments) {
+    Comment.find({article: req.query.articleId}).exec(function (err, comments) {
         if (err) {
             return res.status(400).send({
                 message: errorHandler.getErrorMessage(err)
