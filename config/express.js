@@ -33,7 +33,7 @@ module.exports = function () {
 	app.use(passport.session());
 
 	require("../app/routes/index.server.route.js")(app);//引入路由信息
-	require("../app/routes/comment.server.route.js")(app);//引入路由信息
+	require("../app/routes/introduction.server.route.js")(app);//引入路由信息
 	app.use(express.static("./public"));
 	return app;
 };

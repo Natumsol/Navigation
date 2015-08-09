@@ -10,7 +10,7 @@ module.exports = function(){
 	});
 
 	require("../app/models/user.server.model.js");
-	require("../app/models/article.server.model.js");
+	require("../app/models/sight.server.model.js");
 	require("../app/models/comment.server.model.js");
 	return db;
 };

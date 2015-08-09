@@ -5,8 +5,6 @@ var users = require('../controllers/user.server.controller'),
 	moment = require("moment")
 module.exports = function(app) {
 	app.route("/").get(main.index);
-	app.route("/introduction").get(main.introduction);
-
 	app.route('/signup')
 		.get(users.renderSignup)
 		.post(users.signup);

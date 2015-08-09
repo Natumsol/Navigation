@@ -169,3 +169,4 @@ $(".wow").each(function() {
 });
 
 new WOW().init();
+

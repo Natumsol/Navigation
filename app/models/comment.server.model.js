@@ -3,7 +3,7 @@
  */
 var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
-var UserSchema = new Schema({
+var CommentSchema = new Schema({
     article: {
         type: Schema.ObjectId,
         ref: 'Article'
@@ -28,4 +28,4 @@ var UserSchema = new Schema({
         default: Date.now
     }
 });
-mongoose.model('Comment', UserSchema);
+mongoose.model('Comment', CommentSchema);
