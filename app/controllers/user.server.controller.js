@@ -26,8 +26,9 @@ exports.renderSignin = function(req, res, next) {
 			messages: req.flash('error') || req.flash('info')
 		});
 	} else {
-		return res.redirect('/');
+		return res.redirect("/");
 	}
+	s
 };
 exports.renderSignup = function(req, res, next) {
 	if (!req.user) {
@@ -38,6 +39,23 @@ exports.renderSignup = function(req, res, next) {
 	} else {
 		return res.redirect('/');
 	}
+};
+
+exports.signin = function (req, res, next) {
+	passport.authenticate('local', function (err, user, info) {
+		if (err) {
+			return next(err);
+		}
+		if (!user) {
+			return res.redirect('/signin');
+		}
+		req.logIn(user, function (err) {
+			if (err) {
+				return next(err);
+			}
+			return res.redirect('back');
+		});
+	})(req, res, next);
 };
 exports.signup = function(req, res, next) {
 	if (!req.user) {
@@ -61,5 +79,5 @@ exports.signup = function(req, res, next) {
 };
 exports.signout = function(req, res) {
 	req.logout();
-	res.redirect('/');
+	res.redirect("/");
 };

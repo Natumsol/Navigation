@@ -5,10 +5,20 @@
                 <div class="col-sm-12">
                     <div class="form-group row ">
                         <div class="col-sm-4">
+                            <% if(user){ %>
+                            <input type="email" name="email" readonly class="form-control" id="email" placeholder="电子邮件"
+                                   value="<%= user.email %>">
+                            <% }else{ %>
                             <input type="email" name="email" class="form-control" id="email" placeholder="电子邮件">
+                            <% } %>
                         </div>
                         <div class="col-sm-4">
+                            <% if(user){ %>
+                            <input type="text" name="name" readonly class="form-control" id="name" placeholder="昵称"
+                                   value="<%= user.username %>">
+                            <% }else{ %>
                             <input type="text" name="name" class="form-control" id="name" placeholder="昵称">
+                            <% } %>
                         </div>
                     </div>
                 </div>

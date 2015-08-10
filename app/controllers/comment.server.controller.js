@@ -13,6 +13,13 @@ exports.getComment = function (req, res) {
 };
 exports.postComment = function (req, res) {
     var comment = new Comment(req.body);
+    if (req.user) {
+        comment.name = req.user.username;
+        comment.email = req.user.email;
+        comment.visitor = 1;
+    } else {
+        comment.visitor = 0;
+    }
     comment.ip = req._remoteAddress;
     comment.save(function (err) {
         Comment.find({article: req.body.article}).exec(function (err, comments) {

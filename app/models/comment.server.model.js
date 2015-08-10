@@ -21,6 +21,10 @@ var CommentSchema = new Schema({
         required: '昵称不能为空！',
         trim: true
     },
+    visitor: {
+        type: Number,
+        enum: [0, 1]
+    },
     ip:String,
     created: {
         type: Date,
