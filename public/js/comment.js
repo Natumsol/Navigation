@@ -39,6 +39,7 @@ $(function () {
             dateType: "json",
             type: "post",
             success: function (data) {
+                form[0].reset(); // 重置表单
                 var comment = new EJS({url: '/comment.ejs'}).render(data); // 渲染评论模板
                 comment_wrapper.html(comment);
             }
