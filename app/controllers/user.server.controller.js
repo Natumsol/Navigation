@@ -28,7 +28,6 @@ exports.renderSignin = function(req, res, next) {
 	} else {
 		return res.redirect("/");
 	}
-	s
 };
 exports.renderSignup = function(req, res, next) {
 	if (!req.user) {
