@@ -18,7 +18,6 @@ var CommentSchema = new Schema({
     },
     name: {
         type: String,
-        unique: true,
         required: '昵称不能为空！',
         trim: true
     },

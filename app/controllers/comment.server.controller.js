@@ -7,7 +7,7 @@ exports.getComment = function (req, res) {
                 message: errorHandler.getErrorMessage(err)
             });
         } else {
-            res.jsonp(comments);
+            res.jsonp({comments: comments});
         }
     });
 };
@@ -24,7 +24,7 @@ exports.postComment = function (req, res) {
                 for(var i in comments) {
                     comments[i].formatedDate = moment(comments[i].created).format("YYYY-MM-dd HH:mm:ss");
                 }
-                res.jsonp(comments);
+                res.jsonp({comments: comments});
             }
         });
     });

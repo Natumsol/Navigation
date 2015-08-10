@@ -1068,7 +1068,6 @@ footer a {
     padding: 0;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 20px;
     font-weight: 400;
     border-bottom:0;
     display: inline-block;
@@ -1077,7 +1076,7 @@ footer a {
 #introduction .nav-tabs li{
     display: inline-block;
     margin-right: 2%;
-    margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 #introduction .nav-tabs  li > a{
   border-radius: 3px;
